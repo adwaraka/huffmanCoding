@@ -70,7 +70,7 @@ def huffmanDecoding(codedStr, nodeRoot):
 if __name__ == "__main__":
     def main():
         arr = []
-        with open('les_misérables.txt', 'r') as fp:
+        with open('test.txt', 'r', encoding='utf-8') as fp:
             count = Counter(fp.read())
         for (i, j) in zip(count.keys(), count.values()):
             arr.append((i, j))
